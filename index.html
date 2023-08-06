@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sushi form</title>
+</head>
+<body>
+    <main>
+      <div id="image-container">
+        <img id="background-img" src="images/sushi-background.jpg" alt="sushi-background">
+        <div class="overlay">
+          <div id="logo">
+            <div id="logo-img-container">
+              <img id="logo-img" src="images/sushi-logo.png" alt="sushi-logo">
+            </div>
+            <div id="restaurant-name-container">
+              <p id="restaurant-name">Magic Sushi Galaxy Supreme Shop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="right-section">
+        <p class="message">
+          Crave free sushi? Join our rewards program! With every order you place, 
+          you'll rack up sushi points that you can later exchange for delectable 
+          sushi treats. Don't miss out on this opportunity!
+        </p>
+        <p class="message2">Create an account now to begin your sushi adventure!</p>
+        <!-- <p>Photo by <a href="https://unsplash.com/@ferhadd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farhad Ibrahimzade</a> on <a href="https://unsplash.com/photos/lKk2xzM0YFU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p> -->
+        <!-- <h1 id="form-title">Free Sushi</h1> -->
+        
+        <form action="">
+
+
+          <div class="card-section">
+            <p>Get Started!</p>
+
+            <div class="input-section">
+              <div class="pair">
+                <div class="info-input">
+                  <label for="first-name">First name</label>
+                  <input type="text" id="first-name" name="firstName">
+                </div>
+                <div class="info-input">
+                  <label for="last-name">Last name</label>
+                  <input type="text" id="last-name" name="lastName">
+                </div>
+              </div>
+              <div class="pair">
+                <div class="info-input">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" required>
+                </div>
+                <div class="info-input">
+                  <label for="phone-number">Phone number</label>
+                  <input type="text" id="phone-number" name="phoneNumber">
+                </div>
+              </div>
+              <div class="pair">
+                <div class="info-input">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" required>
+                </div>
+                <div class="info-input">
+                  <label for="confirm-password">Confirm password</label>
+                  <input type="password" id="confirm-password" name="confirmPassword" required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Create Account</button>
+          <p id="login">Already have an account? <a href="#">Log In</a></p>
+        </form>
+      </div>
+
+    </main>
+</body>
+</html>
