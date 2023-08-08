@@ -75,7 +75,7 @@ html {
   top: 50%;
   transform: translate(0%, -50%);
   width: 100%;
-  height: 80%;
+  height: 50%;
   background-color: rgba(0, 0, 0, 0.3); /* Adjust the color and opacity as needed */
   z-index: 1; /* Ensure the overlay is above the image */
   display: flex;
@@ -132,7 +132,8 @@ form p:first-child {
 .card-section {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #1C1B1B;;
+  /* background-color: #191970; */
+  background-color: #1C1B1B;
 }
 
 .info-input {
@@ -144,7 +145,9 @@ form p:first-child {
 
 .info-input input {
   font-size: 18px;
+  border-radius: 6px;
 }
+
 button[type="submit"] {
   display: block;
   padding: 10px;
@@ -172,6 +175,29 @@ button[type="submit"] {
   color: #ADD8E6;
 }
 
+input:focus {
+  border: 2px solid #00BFFF;
+  outline: none;
+}
+
+form.submit-fail .error {
+  border: 2px solid #FF6666;
+}
+
+.password-and-min-length {
+  display: flex; 
+  align-items: center;
+}
+
+.password-min-length {
+  font-size: 11px;
+}
+
+.password-min-length::before {
+  content: " ";
+  white-space: pre;
+}
+
 @media only screen and (min-width: 768px) {
   
   .overlay {
@@ -179,7 +205,7 @@ button[type="submit"] {
     top: 25%;
     transform: translate(0%, -50%);
     width: 100%;
-    height: 30%;
+    height: 25%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
     display: flex;
@@ -217,7 +243,7 @@ button[type="submit"] {
 
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1100px) {
 
   #logo-img {
     width: 100px;
@@ -256,7 +282,6 @@ button[type="submit"] {
   }
 
   .card-section {
-    background-color: #1C1B1B;
     padding-left: 8%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -284,6 +309,10 @@ button[type="submit"] {
     margin-left: 8%;
     text-align: left;
     font-size: 18px;
+  }
+
+  .password-min-length {
+    font-size: 13px;
   }
 }
 

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="script.js" defer></script>
   <title>Sushi form</title>
 </head>
 <body>
@@ -28,12 +30,12 @@
           you'll rack up sushi points that you can later exchange for delectable 
           sushi treats. Don't miss out on this opportunity!
         </p>
-        <p class="message2">Create an account now to begin your sushi adventure!</p>
+        <p class="message2">Create an account now to begin your free sushi adventure!</p>
         <!-- <p>Photo by <a href="https://unsplash.com/@ferhadd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farhad Ibrahimzade</a> on <a href="https://unsplash.com/photos/lKk2xzM0YFU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </p> -->
         <!-- <h1 id="form-title">Free Sushi</h1> -->
         
-        <form action="">
+        <form action="" onsubmit="return validateInputs()">
 
 
           <div class="card-section">
@@ -43,31 +45,34 @@
               <div class="pair">
                 <div class="info-input">
                   <label for="first-name">First name</label>
-                  <input type="text" id="first-name" name="firstName">
+                  <input type="text" id="first-name" name="firstName" required>
                 </div>
                 <div class="info-input">
                   <label for="last-name">Last name</label>
-                  <input type="text" id="last-name" name="lastName">
+                  <input type="text" id="last-name" name="lastName" required>
                 </div>
               </div>
               <div class="pair">
                 <div class="info-input">
                   <label for="email">Email</label>
-                  <input type="text" id="email" name="email" required>
+                  <input type="email" id="email" name="email" required>
                 </div>
                 <div class="info-input">
                   <label for="phone-number">Phone number</label>
-                  <input type="text" id="phone-number" name="phoneNumber">
+                  <input type="tel" id="phone-number" name="phoneNumber" required>
                 </div>
               </div>
               <div class="pair">
                 <div class="info-input">
-                  <label for="password">Password</label>
-                  <input type="password" id="password" name="password" required>
+                  <div class="password-and-min-length">
+                    <label for="password">Password</label>
+                    <p class="password-min-length">(min-length: 6)</p>
+                  </div>
+                  <input type="password" id="password" name="password" minlength="6" required>
                 </div>
                 <div class="info-input">
                   <label for="confirm-password">Confirm password</label>
-                  <input type="password" id="confirm-password" name="confirmPassword" required>
+                  <input type="password" id="confirm-password" name="confirmPassword" minlength="6" required>
                 </div>
               </div>
             </div>
